@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.All_prayers_activity">
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageButton
+            android:id="@+id/play_button"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:src="@android:drawable/ic_media_play"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="Play button"/>
+
+        <ImageView
+            android:id="@+id/square"
+            android:layout_width="50dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/bookmark_5790882"
+            android:layout_height="50dp"/>
+        <ImageView
+            android:id="@+id/refersh"
+            android:layout_width="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/redo_8066313"
+            android:layout_height="50dp"/>
+        <ImageView
+            android:id="@+id/save_as"
+            android:layout_width="50dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/bookmark_5790882"
+            android:layout_height="50dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            android:text="Go to"
+            android:textSize="10dp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        app:cardCornerRadius="10dp"
+        android:elevation="8dp"
+        android:layout_marginTop="90dp"
+        app:cardUseCompatPadding="true"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/arabic"
+                android:layout_width="wrap_content"
+                android:text="Arabic"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_margin="4dp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/arabic_dua"
+                android:layout_width="wrap_content"
+                android:text="yaseen"
+                android:textSize="16sp"
+                android:layout_margin="10dp"
+                android:layout_gravity="end"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/urdu"
+                android:layout_width="wrap_content"
+                android:text="Urdu"
+                android:textSize="20sp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="start"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/urdu_dua"
+                android:layout_width="wrap_content"
+                android:text="yaseen"
+                android:textSize="16sp"
+                android:layout_margin="5dp"
+                android:layout_gravity="end"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/english"
+                android:layout_width="wrap_content"
+                android:text="English"
+                android:textSize="20sp"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"
+                android:layout_gravity="start"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/english_dua"
+                android:layout_width="wrap_content"
+                android:text="yaseen"
+                android:textSize="16sp"
+                android:layout_margin="5dp"
+                android:layout_gravity="end"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

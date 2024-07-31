@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.Ayat_ul_kursi">
+
+    <LinearLayout
+        android:id="@+id/audio_layout"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageButton
+            android:id="@+id/play_button"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:src="@android:drawable/ic_media_play"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="Play button"/>
+
+        <ImageView
+            android:id="@+id/square"
+            android:layout_width="50dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/ic_launcher_background"
+            android:layout_height="50dp"/>
+        <ImageView
+            android:id="@+id/refersh"
+            android:layout_width="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/ic_launcher_background"
+            android:layout_height="50dp"/>
+        <ImageView
+            android:id="@+id/save_as"
+            android:layout_width="50dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/ic_launcher_background"
+            android:layout_height="50dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            android:text="Go to"
+            android:textSize="10dp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="80dp"
+        android:id="@+id/textbismillah"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/bismillah"
+            android:layout_width="match_parent"
+            android:text="بِسْمِ ٱللّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ"
+            android:textStyle="bold"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="70dp"
+            android:textSize="25dp"
+            android:layout_height="wrap_content"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bismillah_in_english"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/textbismillah"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/quran_card1"
+            android:layout_width="480dp"
+            android:layout_margin="5dp"
+            app:cardUseCompatPadding="true"
+            android:elevation="9dp"
+            android:layout_height="160dp">
+
+            <TextView
+                android:layout_margin="20dp"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:text="Bismillah ir-Rahman ir-Raheem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+            <TextView
+                android:layout_marginTop="80dp"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:text="In the name of Allah, the Most Gracious, the Most Merciful."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_marginTop="210dp"
+        android:layout_below="@+id/audio_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.recyclerview.widget.RecyclerView
+
+            android:id="@+id/ayat_ul_kursi_recycle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

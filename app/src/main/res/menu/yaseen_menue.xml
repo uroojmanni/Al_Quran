@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/home_menu"
+            android:icon="@drawable/internet_2889312"
+            android:title="Language"/>
+        <item
+            android:id="@+id/share_menu"
+            android:icon="@drawable/share_929539"
+            android:title="Share"/>
+        <item
+            android:id="@+id/about_menu"
+            android:icon="@drawable/rare_us"
+            android:title="Rate us"/>
+
+    </group>
+
+</menu>

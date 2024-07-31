@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_yaseen"
+        android:icon="@drawable/ic_home"
+        android:title="Yaseen" />
+
+    <item
+        android:id="@+id/menu_rahman"
+        android:icon="@drawable/ic_home"
+        android:title="Rahman"
+         />
+    <item
+        android:id="@+id/menu_mulk"
+        android:icon="@drawable/ic_home"
+        android:title="Mulk"
+        />
+    <item
+        android:id="@+id/menu_khaf"
+        android:icon="@drawable/ic_home"
+        android:title="Khaf"
+
+        />
+    <item
+        android:id="@+id/menu_waqia"
+        android:icon="@drawable/ic_home"
+        android:title="Waqia"
+         />
+
+</menu>

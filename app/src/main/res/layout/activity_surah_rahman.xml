@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.Surah_Rahman">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/buttonLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/bismillah"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/play_button"
+            android:layout_width="27dp"
+            android:layout_height="21dp"
+            android:layout_margin="10dp"
+            android:contentDescription="Play button"
+            android:src="@android:drawable/ic_media_play"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/square"
+            android:layout_width="36dp"
+            android:layout_height="27dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/bookmark_5790882"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/textView"
+            app:layout_constraintHorizontal_bias="0.322"
+            app:layout_constraintStart_toEndOf="@+id/refersh"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.4" />
+
+        <ImageView
+            android:id="@+id/refersh"
+            android:layout_width="26dp"
+            android:layout_height="20dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/redo_8066313"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.363"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="147dp" />
+
+        <ImageView
+            android:id="@+id/save_as"
+            android:layout_width="30dp"
+            android:layout_height="28dp"
+            android:layout_margin="10dp"
+            android:layout_marginStart="40dp"
+            android:src="@drawable/bookmark_5790882"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/refersh"
+            app:layout_constraintHorizontal_bias="0.415"
+            app:layout_constraintStart_toEndOf="@+id/play_button"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.8" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Go to"
+            android:textSize="10dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.382"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="314dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_marginTop="80dp"
+        android:id="@+id/textbismillah"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/bismillah_in_english"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/textbismillah"
+        android:layout_height="wrap_content">
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/rahman_recycle"
+        android:layout_below="@+id/bismillah_in_english"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rahman_recycle2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/quran_card1"
+        app:layout_constraintVertical_bias="0.014"
+        tools:layout_editor_absoluteX="0dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/quran_card1"
+        android:layout_width="375dp"
+        android:layout_height="141dp"
+        android:layout_margin="5dp"
+        android:layout_marginTop="28dp"
+        android:elevation="9dp"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bismillah">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="Bismillah ir-Rahman ir-Raheem"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="80dp"
+            android:text="In the name of Allah, the Most Gracious, the Most Merciful."
+            android:textSize="14dp"
+            android:textStyle="bold" />
+
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/bismillah"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="بِسْمِ ٱللّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="-18dp"
+        tools:layout_editor_absoluteY="109dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

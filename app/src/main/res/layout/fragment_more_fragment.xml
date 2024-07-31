@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.more_fragment">
+
+    <View
+
+        android:id="@+id/top_view"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#3F51B5"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/view_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text=" More"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/top_view"
+        app:layout_constraintStart_toStartOf="@+id/top_view"
+        app:layout_constraintTop_toTopOf="@+id/top_view" />
+
+
+    <ImageView
+        android:id="@+id/more_rating"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="28dp"
+        android:src="@drawable/star_rating_pro"
+        app:layout_constraintBottom_toBottomOf="@+id/view_text"
+        app:layout_constraintEnd_toEndOf="@+id/top_view"
+        app:layout_constraintTop_toTopOf="@+id/view_text"
+        app:layout_constraintVertical_bias="0.583" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/sura_recycle"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/top_view" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

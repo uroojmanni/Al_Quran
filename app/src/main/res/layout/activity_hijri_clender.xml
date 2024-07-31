@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.Hijri_clender">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/hijriiii"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="20dp"
+        android:backgroundTint="@color/design_default_color_on_primary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="Hijrii Calender"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="24dp"
+            tools:layout_editor_absoluteY="22dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/banner_hijree"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hijriiii"
+        app:layout_constraintBottom_toTopOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hijriiii">
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <CalendarView
+        android:id="@+id/hijrii_clenser1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/banner_hijree"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.144">
+
+    </CalendarView>
+
+    <ImageView
+
+        android:id="@+id/imageView2"
+        android:layout_width="384dp"
+        android:layout_height="110dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="100dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/quran"
+        app:layout_constraintEnd_toEndOf="@+id/banner_hijree"
+        app:layout_constraintHorizontal_bias="0.324"
+        app:layout_constraintStart_toStartOf="@+id/banner_hijree"
+        app:layout_constraintTop_toTopOf="@+id/hijriiii" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Sura_yaseen"
+        tools:targetApi="31">
+        <activity
+            android:name=".Activities.All_prayers_activity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Dua_data_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Asma_activity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.notification"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Share_greetings"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Sahib_bukhari"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Ramdan_timing"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Name_of_Allah"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Hijri_clender"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Hajj"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Duas"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Ayat_ul_kursi"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Blessings"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Surah_Waqiah"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Surah_Kahif"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Surah_Mulk"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Surah_Rahman"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Surah_yaseen"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Splash_screen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
